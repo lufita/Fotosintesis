@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgkosong"
+    android:orientation="vertical"
+    tools:context=".KompetensiActivity">
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+        <ImageView
+            android:layout_width="@dimen/dp210"
+            android:layout_height="@dimen/dp100"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/hkompetensi" />
+
+        <Button
+            android:layout_width="@dimen/dp30"
+            android:layout_height="@dimen/dp30"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/dp16"
+            android:layout_marginRight="@dimen/dp16"
+            android:background="@drawable/bexit"
+            android:onClick="close" />
+        
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:background="@color/transparanGrey50" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp8"
+                        android:orientation="vertical"
+                        android:padding="@dimen/dp20">
+
+                        <TextView
+                            android:id="@+id/txtkom"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/txtjenjang"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/sp17" />
+
+                        <TextView
+                            android:id="@+id/txtkom2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/txtkelas"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/sp17" />
+
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="@dimen/dp92"
+                        android:layout_height="@dimen/dp92"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/k13" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:background="@color/transparanGrey50" />
+
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/transparanWhite"
+                android:orientation="vertical"
+                android:padding="@dimen/dp20">
+
+                <TextView
+                    android:id="@+id/txtkom3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/teksKD"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/sp17" />
+
+                <TextView
+                    android:id="@+id/txtkom4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tekskomp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/sp17" />
+
+                <TextView
+                    android:id="@+id/txtkom5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tekskomp2"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/sp17" />
+
+                <TextView
+                    android:id="@+id/txtkom6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tekskomp3"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/sp17" />
+
+                <TextView
+                    android:id="@+id/txtkom7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tekspencapaian"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/sp17"
+                    android:layout_marginTop="10dp"/>
+
+                <TextView
+                    android:id="@+id/txtkom8"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tekspencapaian2"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/sp17" />
+                <TextView
+                    android:id="@+id/txtkom9"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tekspencapaian3"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/sp17" />
+                <TextView
+                    android:id="@+id/txtkom10"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tekspencapaian4"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/sp17" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

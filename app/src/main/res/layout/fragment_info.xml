@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgkosong"
+    tools:context=".Info">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@color/transparanBlack"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp8">
+
+            <ImageView
+                android:layout_width="@dimen/dp210"
+                android:layout_height="@dimen/dp100"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/httgkita" />
+
+            <Button
+                android:id="@+id/close"
+                android:layout_width="@dimen/dp30"
+                android:layout_height="@dimen/dp30"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/dp8"
+                android:layout_marginRight="@dimen/dp8"
+                android:background="@drawable/bexit" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:background="@color/colorWhite" />
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/dp8">
+
+                <LinearLayout
+                    android:layout_width="@dimen/dp210"
+                    android:layout_height="@dimen/dp50"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/dp16"
+                    android:background="@drawable/rounded"
+                    android:orientation="vertical"
+                    android:padding="@dimen/dp4">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/dp4"
+                        android:gravity="center"
+                        android:text="Pengembang"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="140dp"
+                        android:layout_height="1dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/dp4"
+                        android:background="@color/colorWhite" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/dp8"
+                    android:text="Duwi Lufita Marfiana"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/sp20"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="IG @luplll1103"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/sp20"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/dp8"
+                    android:text="Adam Septa Alghifari"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/sp20"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="IG @dmspt__"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/sp20"
+                    android:textStyle="normal" />
+
+                <LinearLayout
+                    android:layout_width="@dimen/dp210"
+                    android:layout_height="@dimen/dp50"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/dp20"
+                    android:background="@drawable/rounded"
+                    android:orientation="vertical"
+                    android:padding="@dimen/dp4">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Daftar Pustaka"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/sp20"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="@dimen/dp150"
+                        android:layout_height="@dimen/dp1"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/dp4"
+                        android:background="@color/colorWhite" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp8"
+                    android:layout_marginTop="@dimen/dp8"
+                    android:text="@string/daftarPustaka"
+                    android:textColor="@color/colorWhite"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/sp20"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:layout_margin="@dimen/dp8"
+                    android:layout_marginTop="@dimen/dp8"
+                    android:text="Backsound : ''In Your Arms'' Saib - Youtube "
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/sp18"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</FrameLayout>

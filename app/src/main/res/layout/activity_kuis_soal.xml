@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgkosongmatahari"
+    android:orientation="vertical"
+    android:padding="@dimen/dp20"
+    tools:context=".kuis_soal">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/transparanWhite"
+            android:orientation="vertical"
+            android:padding="@dimen/dp16">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_gambar"
+                    android:layout_width="168dp"
+                    android:layout_height="104dp"
+                    android:src="@drawable/satu" />
+
+                <TextView
+                    android:id="@+id/quis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp"
+                    android:textStyle="bold|normal"
+                    android:textAlignment="center"/>
+
+            </LinearLayout>
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp20">
+
+                <RadioButton
+                    android:id="@+id/pilihA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="normal"
+                    android:buttonTint="@color/colorBlack"/>
+
+                <RadioButton
+                    android:id="@+id/pilihB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="normal"
+                    android:buttonTint="@color/colorBlack"/>
+
+                <RadioButton
+                    android:id="@+id/pilihC"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="normal"
+                    android:buttonTint="@color/colorBlack"/>
+
+                <RadioButton
+                    android:id="@+id/pilihD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="normal"
+                    android:buttonTint="@color/colorBlack"/>
+
+            </RadioGroup>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerInParent="true"
+                android:gravity="center">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/roundorange"
+                    android:layout_marginTop="@dimen/dp8"
+                    android:onClick="next"
+                    android:text="lanjut"
+                    android:textColor="@color/colorWhite" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

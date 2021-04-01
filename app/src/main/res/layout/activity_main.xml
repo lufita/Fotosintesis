@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgmain"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true">
+
+        <RelativeLayout
+            android:id="@+id/rel1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:paddingLeft="@dimen/dp40"
+            android:paddingBottom="@dimen/dp92">
+
+            <Button
+                android:id="@+id/btn_materi"
+                android:layout_width="@dimen/dp200"
+                android:layout_height="@dimen/dp60"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/dp4"
+                android:background="@drawable/bmateri"
+                android:gravity="center" />
+
+            <Button
+                android:id="@+id/btn_kompetensi"
+                android:layout_width="@dimen/dp200"
+                android:layout_height="@dimen/dp60"
+                android:layout_below="@+id/btn_materi"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/dp4"
+                android:background="@drawable/bkompetensi"
+                android:gravity="center" />
+
+            <Button
+                android:id="@+id/btn_evaluasi"
+                android:layout_width="@dimen/dp200"
+                android:layout_height="@dimen/dp60"
+                android:layout_below="@id/btn_kompetensi"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/dp4"
+                android:background="@drawable/bevaluasi"
+                android:gravity="center" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/rel1"
+            android:paddingLeft="@dimen/dp40"
+            android:paddingBottom="@dimen/dp92">
+
+            <Button
+                android:id="@+id/btn_mute"
+                android:layout_width="@dimen/dp60"
+                android:layout_height="@dimen/dp60"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/dp4"
+                android:background="@drawable/bsounds"
+                android:gravity="center" />
+
+            <Button
+                android:id="@+id/btn_help"
+                android:layout_width="@dimen/dp60"
+                android:layout_height="@dimen/dp60"
+                android:layout_below="@id/btn_mute"
+                android:layout_margin="@dimen/dp4"
+                android:background="@drawable/bhelp"
+                android:gravity="center" />
+
+            <Button
+                android:id="@+id/btn_info"
+                android:layout_width="@dimen/dp60"
+                android:layout_height="@dimen/dp60"
+                android:layout_below="@id/btn_help"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/dp4"
+                android:background="@drawable/binformasi"
+                android:gravity="center" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/fragmentinfo"
+        android:layout_width="350dp"
+        android:layout_height="500dp"
+        android:layout_centerInParent="true" />
+
+</RelativeLayout>

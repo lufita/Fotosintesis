@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgkosongmatahari"
+    android:orientation="vertical"
+    tools:context=".score_kuis">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:background="@color/transparanWhite"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <ImageView
+                android:layout_width="222dp"
+                android:layout_height="181dp"
+                android:src="@drawable/jempol" />
+
+            <TextView
+                android:id="@+id/hasil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="HASIL : "
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/sp20"
+                android:textStyle="normal|bold" />
+
+            <TextView
+                android:id="@+id/nilai"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="NILAI"
+                android:textColor="@color/orange"
+                android:textSize="60sp"
+                android:textStyle="normal|bold" />
+
+            <RelativeLayout
+                android:layout_width="@dimen/dp150"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerInParent="true"
+                android:padding="@dimen/dp8">
+
+                <Button
+                    android:layout_width="@dimen/dp60"
+                    android:layout_height="@dimen/dp60"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/bulang"
+                    android:onClick="ulangi" />
+
+                <Button
+                    android:layout_width="@dimen/dp60"
+                    android:layout_height="@dimen/dp60"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/bexit"
+                    android:onClick="close" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

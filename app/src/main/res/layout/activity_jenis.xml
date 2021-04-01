@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgkosong2"
+    tools:context=".JenisActivity">
+
+    <RelativeLayout
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="@dimen/dp200"
+            android:layout_height="@dimen/dp100"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/hkloropas" />
+
+        <Button
+            android:layout_width="@dimen/dp30"
+            android:layout_height="@dimen/dp30"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/dp16"
+            android:layout_marginRight="@dimen/dp16"
+            android:background="@drawable/bexit"
+            android:onClick="close" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/head">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_centerHorizontal="true"
+                android:background="@color/transparanGrey50" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical"
+                android:background="@color/transparanWhite">
+
+                <TextView
+                android:id="@+id/txtjenis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp16"
+                android:text="@string/tekskloroplas"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/sp17" />
+
+                <TextView
+                    android:id="@+id/txtjenis2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp16"
+                    android:text="@string/kloropas2"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/sp17" />
+
+                <ImageView
+                    android:layout_width="270dp"
+                    android:layout_height="250dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/kloroplas" />
+
+                <View
+                    android:layout_width="350dp"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/transparanGrey50" />
+
+            </LinearLayout>
+
+            <WebView
+                android:id="@+id/webyutub"
+                android:layout_width="350dp"
+                android:layout_height="@dimen/dp200"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_marginTop="@dimen/dp8" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp4"
+                android:text="Klik Tombol Play Untuk Memutar Video"
+                android:textAlignment="center"
+                android:textColor="@color/colorWhite"
+                android:textSize="10sp" />
+
+            <RelativeLayout
+                android:layout_width="@dimen/dp130"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/dp16">
+
+                <Button
+                    android:layout_width="@dimen/dp60"
+                    android:layout_height="@dimen/dp60"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/dp8"
+                    android:background="@drawable/bplay"
+                    android:onClick="Play" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

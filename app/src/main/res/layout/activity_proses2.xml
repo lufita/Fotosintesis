@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgkosong2"
+    tools:context=".Proses2Activity">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/dp150"
+                android:layout_height="@dimen/dp100"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/hreaksiterang" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/transparanGrey50" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical"
+                android:background="@color/transparanWhite">
+
+                <TextView
+                    android:id="@+id/txtproses2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp16"
+                    android:text="@string/teksreaksiterang"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/sp16" />
+
+                <TextView
+                    android:id="@+id/txtproses22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp16"
+                    android:text="@string/teksreaksiterang2"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/sp16" />
+
+                <ImageView
+                    android:layout_width="@dimen/dp150"
+                    android:layout_height="@dimen/dp150"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/rekasiterang"
+                    android:layout_marginBottom="@dimen/dp8"/>
+
+                <View
+                    android:layout_width="350dp"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/transparanGrey50" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical"
+                android:background="@color/transparanWhite">
+
+                <TextView
+                    android:id="@+id/txtsumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:padding="@dimen/dp8"
+                    android:text="Sumber : https://jagad.id"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/sp10" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="@dimen/dp130"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/dp16">
+
+                <Button
+                    android:layout_width="@dimen/dp60"
+                    android:layout_height="@dimen/dp60"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/dp8"
+                    android:background="@drawable/bkiri"
+                    android:onClick="back" />
+
+                <Button
+                    android:id="@+id/btn_kanan"
+                    android:layout_width="@dimen/dp60"
+                    android:layout_height="@dimen/dp60"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/dp8"
+                    android:background="@drawable/bkanan" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgkosong2"
+    android:orientation="vertical"
+    tools:context=".FaktorActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="@dimen/dp200"
+            android:layout_height="@dimen/dp100"
+            android:layout_centerHorizontal="true"
+            android:padding="@dimen/dp8"
+            android:src="@drawable/hfaktor" />
+
+        <Button
+            android:layout_width="@dimen/dp30"
+            android:layout_height="@dimen/dp30"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/dp16"
+            android:layout_marginRight="@dimen/dp16"
+            android:background="@drawable/bexit"
+            android:onClick="close" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/transparanWhite"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/fak_0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/dp16"
+                    android:paddingTop="@dimen/dp8"
+                    android:paddingRight="@dimen/dp16"
+                    android:text="@string/teksfaktor1"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/sp17" />
+
+                <TextView
+                    android:id="@+id/fak_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/dp16"
+                    android:paddingTop="@dimen/dp4"
+                    android:paddingRight="@dimen/dp16"
+                    android:text="@string/teksfaktor"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/sp17" />
+
+                <TextView
+                    android:id="@+id/fak_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/dp16"
+                    android:paddingTop="@dimen/dp4"
+                    android:paddingRight="@dimen/dp16"
+                    android:text="@string/teksfaktor2"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/sp17" />
+
+                <TextView
+                    android:id="@+id/fak_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/dp16"
+                    android:paddingTop="@dimen/dp4"
+                    android:paddingRight="@dimen/dp16"
+                    android:text="@string/teksfaktor3"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/sp17" />
+
+                <TextView
+                    android:id="@+id/fak_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/dp16"
+                    android:paddingTop="@dimen/dp4"
+                    android:paddingRight="@dimen/dp16"
+                    android:text="@string/teksfaktor4"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/sp17" />
+
+                <TextView
+                    android:id="@+id/fak_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/dp16"
+                    android:paddingTop="@dimen/dp4"
+                    android:paddingRight="@dimen/dp16"
+                    android:paddingBottom="@dimen/dp8"
+                    android:text="@string/teksfaktor5"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/sp17" />
+
+            </LinearLayout>
+
+            <WebView
+                android:id="@+id/webyutub"
+                android:layout_width="350dp"
+                android:layout_height="@dimen/dp200"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp8" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp4"
+                android:text="Klik Tombol Play Untuk Memutar Video"
+                android:textAlignment="center"
+                android:textColor="@color/colorWhite"
+                android:textSize="10sp" />
+
+            <RelativeLayout
+                android:layout_width="@dimen/dp130"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/dp16">
+
+                <Button
+                    android:layout_width="@dimen/dp60"
+                    android:layout_height="@dimen/dp60"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="@dimen/dp8"
+                    android:background="@drawable/bplay"
+                    android:onClick="Play" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
